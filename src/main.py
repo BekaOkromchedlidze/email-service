@@ -42,4 +42,5 @@ async def send_email(email_req: EmailRequest):
         sender_email=os.getenv("SENDER_EMAIL"),
         password=os.getenv("PASSWORD"),
     )
+
     email.send_email(email_req.receiver_email, email_req.message)
