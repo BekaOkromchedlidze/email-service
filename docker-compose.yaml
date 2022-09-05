@@ -1,0 +1,12 @@
+version: "1.0.0"
+services:
+  email-service:
+    image: okromcb2/email-service:latest
+    environment:
+      - SMTP_SERVER=
+      - PORT=
+      - SENDER_EMAIL=
+      - PASSWORD=
+    ports:
+      - your_smtp_port:your_smtp_port
+      - 80:80
